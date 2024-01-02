@@ -1,4 +1,8 @@
-import { Eventify } from "../Eventify.js";
+import dotenv from "dotenv";
+
+import { Eventify } from "../Eventify/index.js";
+
+dotenv.config();
 
 export function createEventify() {
 	const WORKSPACE_ID = process.env.WORKSPACE_ID ?? "";
